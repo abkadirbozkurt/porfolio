@@ -1,0 +1,141 @@
+
+
+body{
+    background:linear-gradient(to right, rgb(105, 55, 55),rgb(33, 73, 92));
+    font-family: cursive;
+}
+
+
+.container1{
+display: flex;
+justify-content: center;
+margin-top: 45px;
+}
+
+#item{
+border-radius: 50px;
+padding: 20px;   
+margin: -8px;
+}
+
+.item1{
+z-index: 5;
+background-color: #4267B2;
+}
+
+
+.item2{
+background-color: rgb(4, 132, 218);
+z-index: 4;
+}
+
+.item2:hover  {
+z-index: 5;
+box-shadow: 1px 1px lightslategray;
+}
+
+
+.item3{
+background-color: #DD4B39;
+z-index: 3;
+}
+
+.item3:hover  {
+z-index: 5;
+}
+
+
+.item4{
+z-index: 2;
+background:linear-gradient( to bottom, #8a3ab9 , #bc2a8d, #cd486b,#fbad50) ;
+}
+
+.item4:hover  {
+z-index: 5;
+}
+
+
+.item5{
+z-index: 1;
+background-color: #0072b1;
+}
+
+.item5:hover  {
+z-index: 5;
+}
+
+
+.item6{
+z-index: 0;
+background-color: #FF0000;
+}
+
+.item6:hover  {
+z-index: 5;
+}
+
+
+i{
+font-size: 25px;
+color: white;
+}
+
+.item1:hover , .item2:hover, .item3:hover , .item4:hover , .item5:hover , .item6:hover{
+transition: 0.8s;
+opacity: 0.9;
+transform:rotateZ(360deg) scale(1.2);    
+
+}
+
+::-webkit-scrollbar {
+width: 3px;
+
+}
+
+
+::-webkit-scrollbar-track {
+background: #ffffff00; 
+}
+
+
+::-webkit-scrollbar-thumb {
+background:linear-gradient(to bottom, rgb(105, 55, 55),rgb(33, 73, 92));
+}
+
+
+.flip-card {
+perspective: 800px;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition:  transform 1.5s;
+transform-style: preserve-3d;
+
+
+}
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+width: 100%;
+height: 100%;
+text-align: center;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+
+
+.flip-card-back  {
+background-color: rgba(151, 54, 54, 0);
+border-radius: 20px;
+transform: rotateY(180deg);
+
+}
+
+
